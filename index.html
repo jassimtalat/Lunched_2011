@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LUNCHED</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.1.js"></script>
+<script type="text/javascript" src="css/slides.min.jquery.js"></script>
+    <script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '',
+				generatePagination: true,
+				play: 5000,
+				pause: 2500,
+				effect: 'fade',
+				crossfade : true,
+				hoverPause: false,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <div id="header-container" class="clearfix">
+        <div id="header">
+            <div id="logo"><a href="index.html"><img src="images/lunched-logo.png" alt="Lunched" width="353" height="73" border="0" /></a></div>
+            
+          <div id="navigation" >
+            <div id="top-mini-nav">
+            	<span><img src="images/icon-login.png" width="16" height="15" alt=" " /> <a href="login">Login</a></span>
+                <span><img src="images/icon-account.png" width="20" height="15" alt=" " /> <a href="account.html">Account</a></span>
+            </div>
+            <div class="clearfloat"></div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="meals.html">Meals</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+          </div><!--  end navigation -->
+        </div><!--  end header -->
+    </div><!-- end header container -->
+    
+    
+    <div id="mainpage-banner"  class="clearfix">
+    	<div class="banner-frame">
+
+            <div id="slides">
+				<div class="slides_container">
+					<div class="slide1">
+                       <div class="bannertagline">
+                       Online Lunch Ordering for you and your Family
+                       </div>
+                       <div class="bannertext">
+                       <h1>Signup for Free !!!</h1>
+                       <p>Its easy to enjoy a better lunchtime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                       </div>
+                       <a href="#"><div class="bannerbutton">CREATE NEW ACCOUNT</div></a>
+                    </div><!-- end slide-->
+
+                    <div class="slide2">
+                       
+                    </div><!-- end slide-->
+                    
+                    <div class="slide3">
+                       
+                    </div><!-- end slide-->
+				</div>
+				<a href="javascript:void(0)" class="prev"><img src="images/arrow-back.png" width="26" height="36" alt="Prev"></a>
+				<a href="javascript:void(0)" class="next"><img src="images/arrow-next.png" width="26" height="36" alt="Next"></a>
+			</div><!-- end slides -->
+            
+        </div><!-- end banner-frame -->
+    	
+    </div><!-- end mainpage-banner -->
+    
+<div id="content-container" class="clearfix">
+    	<div class="contentbox">
+   	      <img src="images/mainpg-img-anywhere.png" width="292" height="155" alt=" " />
+          <h1 class="content-box-grn">USE IT ANYWHERE</h1>
+          <p class="text-spacer"></p>
+          <p>Sed ut perspiciatis unde omnis iste natus <a href="#">error sit voluptatem</a> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+          <p class="text-spacer"></p>
+        </div>
+    	<div class="contentbox">
+   	      <img src="images/mainpg-img-easy.png" width="292" height="155" alt=" " />
+          <h1 class="content-box-red">EASY TO USE</h1>
+          <p class="text-spacer"></p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+          <p class="text-spacer"></p>
+        </div>    
+    	<div class="contentbox" style="margin-right:0;">
+   	      <img src="images/mainpg-img-anytime.png" width="292" height="155" alt=" " />
+          <h1 class="content-box-ylw">SAVE YOUR TIME</h1>
+          <p class="text-spacer"></p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+          <p class="text-spacer"></p>
+        </div>
+    </div><!-- end content-container-->
+
+    
+       
+    <div id="footer" class="clearfix">
+        <div class="footer-hr"></div>
+        <div class="footer-info">
+            <p style=" color: #505050;">COPYRIGHT 2011 - LUNCHED</p>
+            <p><a href="#">Privacy Policy</a> <a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Validate xHTML1.0 / CSS3</a></p>
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li style=" color: #505050;">ABOUT US</li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li style=" color: #505050;">SITE </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <p style=" color: #505050;">GET IN TOUCH</p>
+            <p>Tel:  1 800 6000</p>
+            <p>email:  info@lunched.com</p>
+            <p>Address: 1 Thames Park</p>
+            <p>Sydney, Australia</p>
+        </div>     
+        
+        <div class="footer-links">
+            <p style=" color: #505050;">FOLLOW US</p>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Flickr</a></p>
+            <p><a href="#">Linkedin</a></p>
+        </div>                  
+    </div><!-- end footer -->
+</div><!-- end wrapper -->
+ 	
+
+</body>
+</html>
